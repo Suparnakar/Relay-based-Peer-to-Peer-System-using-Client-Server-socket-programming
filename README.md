@@ -10,16 +10,15 @@ In third phase, a set of files (say, *.txt) are distributed evenly among the thr
 
 Implement the functionalities using appropriate REQUEST and RESPONSE Message formats. After each negotiation phase, the TCP connection on both sides should be closed gracefully releasing the socket resource. You should accept the IP Address and Port number from the command line (Don't use a hard-coded port number).
 
-Prototype for command line is as follows:
-compile the three codes
-gcc server.c -o server
-./server <server port no>
-gcc node.c -o node
-./node <Server IP Address> <server port no>
-gcc client.c -o client
-./client <Server IP Address><Server Port number>
+  Prototype for command line is as follows:
+  compile the three codes
+  gcc server.c -o server
+  ./server server port no
+  gcc node.c -o node
+  ./node <Server IP Address> <server port no>
+  gcc client.c -o client
+  ./client <Server IP Address><Server Port number>
   
-(the nodes can be in other directories as well, it doesn't matter.)
+  the nodes can be in other directories as well, it doesn't matter. 
 
-server address is localhost here
-The requested file should be with a node. The client will ask for a file name and return the file if it is found with any node.
+  Server address is localhost here. The requested file should be with a node. The client will ask for a file name and return the file if it is found with any node.
